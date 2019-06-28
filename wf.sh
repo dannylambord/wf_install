@@ -12,7 +12,7 @@ echo  >> wf.service
 echo "[Service]" >> wf.service
 echo 'User=wf' >> wf.service
 echo 'WorkingDirectory=/home/wf' >> wf.service
-echo 'ExecStart=/home/wildfly-10.1.0.Final/bin/standalone -b=0.0.0.0' >> wf.service
+echo 'ExecStart=/home/wildfly-10.1.0.Final/bin/standalone.sh -b=0.0.0.0' >> wf.service
 echo  >> wf.service
 echo "[Install]" >> wf.service
 echo 'WantedBy=multi-user.target' >> wf.service
